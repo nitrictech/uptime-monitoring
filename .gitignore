@@ -1,0 +1,5 @@
+node_modules/
+.nitric/
+.npmrc
+.env
+git.store
