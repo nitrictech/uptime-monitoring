@@ -29,7 +29,7 @@ publicApi.post("/sites/:url", async (ctx) => {
 
   await siteAddedTopicPublish.publish(siteData);
 
-  return ctx;
+  return ctx.res.json(siteData);
 });
 
 publicApi.delete("/sites/:url", async (ctx) => {
